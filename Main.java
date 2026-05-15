@@ -7,14 +7,14 @@ public class Main {
         Random rand = new Random();
 
         // Habilidades jogador
-        Ability chamas = new DamageAbility("Chamas", 20, 2, Type.FIRE);
-        Ability burn = new BurnAbility("Brasas", 5, Type.FIRE);
-        Ability arranhar = new DamageAbility("Arranhar", 10, 1, Type.FIRE);
+        Ability chamas = new DamageAbility("Chamas", 20, 8, Type.FIRE);
+        Ability burn = new BurnAbility("Brasas", 6, Type.FIRE);
+        Ability arranhar = new DamageAbility("Arranhar", 10, 4, Type.FIRE);
 
         // Habilidades inimigo
-        Ability jato = new DamageAbility("Jato de Água", 20, 2, Type.WATER);
-        Ability freeze = new FreezeAbility("Chuva Fria", 5, Type.WATER);
-        Ability mordida = new DamageAbility("Mordida", 15, 3, Type.WATER);
+        Ability jato = new DamageAbility("Jato de Água", 20, 18, Type.WATER);
+        Ability freeze = new FreezeAbility("Chuva Fria", 6, Type.WATER);
+        Ability mordida = new DamageAbility("Mordida", 15, 4, Type.WATER);
 
         Pokemon pyron = new Pokemon("Pyron", 100, Type.FIRE,
                 Arrays.asList(chamas, burn, arranhar));
